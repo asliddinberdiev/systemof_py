@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/groups/', include('groups.urls')),
     path('api/v1/pupils/', include('pupils.urls')),
-    path('auth', include('rest_framework.urls'))
+    path('auth/', include('rest_framework.urls'))
 ]
 
 if settings.DEBUG:
