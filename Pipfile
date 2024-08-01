@@ -10,6 +10,13 @@ djangorestframework = "==3.15.2"
 pillow = "==10.4.0"
 sqlparse = "==0.5.1"
 typing-extensions = "*"
+django-cors-headers = "*"
+dj-rest-auth = "*"
+djangorestframework-simplejwt = "*"
+pyyaml = "*"
+uritemplate = "*"
+inflection = "*"
+drf-yasg = "*"
 
 [dev-packages]
 

@@ -1,7 +1,8 @@
-from django.urls import path
-from .views import PupilList, PupilDetail
+from rest_framework.routers import SimpleRouter
+from .views import PupilViewSet
 
-urlpatterns = [
-    path("", PupilList.as_view()),
-    path("<int:pk>/", PupilDetail.as_view())
-]
+router = SimpleRouter()
+router.register('pupils', PupilViewSet, basename='pupils')
+
+
+urlpatterns = router.urls

@@ -4,5 +4,5 @@ from .models import Pupil
 
 class PupilSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ('__all__')
         model = Pupil
+        fields = ('__all__')
