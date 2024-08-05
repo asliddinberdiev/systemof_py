@@ -3,7 +3,7 @@ import os
 
 class Group(models.Model):
     name = models.CharField(max_length=20, unique=True)
-    day = models.BooleanField()
+    day = models.CharField(max_length=4)
     start_time = models.TimeField()
     end_time = models.TimeField()
     created_at = models.DateTimeField(auto_now=True)
