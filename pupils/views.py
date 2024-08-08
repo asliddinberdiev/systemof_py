@@ -8,7 +8,7 @@ class PupilViewSet(ModelViewSet):
     queryset = Pupil.objects.all()
     serializer_class = PupilSerializer
     filter_backends = (SearchFilter,)
-    search_fields = ["firstname", "lastname", "pupil_phone", "parent_phone" ]
+    search_fields = ["firstname", "lastname", "pupil_phone", "parent_phone", "group__name", ]
 
 
 

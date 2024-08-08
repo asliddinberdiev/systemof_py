@@ -4,3 +4,8 @@
 .env
 
 __pycache__
+
+migrations
+static
+
+db.sqlite3
