@@ -13,7 +13,7 @@ class Pupil(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE)
     pupil_phone = models.CharField(max_length=12, unique=True, validators=[validate_phone])
     parent_phone = models.CharField(max_length=12, unique=True, validators=[validate_phone])
-    image = models.ImageField(upload_to='images/', blank=True)
+    image = models.ImageField(upload_to='images/')
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 
