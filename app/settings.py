@@ -31,8 +31,8 @@ INSTALLED_APPS = [
 ]
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  # Customize the access token lifetime
-    'REFRESH_TOKEN_LIFETIME': timedelta(hours=2),  # Customize the refresh token lifetime
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=4),  # Customize the access token lifetime
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=4),  # Customize the refresh token lifetime
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
     'ALGORITHM': 'HS256',
