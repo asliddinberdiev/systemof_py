@@ -16,5 +16,5 @@ pyjwt==2.9.0; python_version >= '3.8'
 pytz==2024.1
 pyyaml==6.0.2; python_version >= '3.8'
 sqlparse==0.5.1; python_version >= '3.8'
-typing-extensions==3.10.0.2; python_version >= '3.8'
+typing-extensions==3.11; python_version >= '3.8'
 uritemplate==4.1.1; python_version >= '3.6'
