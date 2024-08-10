@@ -61,10 +61,7 @@ class PupilViewSet(ModelViewSet):
         # Schedule deletion of the file after 1 minute
         threading.Timer(60.0, delete_file, [file_path]).start()
 
-        return JsonResponse({
-            'status': 200,
-            'file_url': file_url
-        })
+        return JsonResponse({ 'file_url': file_url })
 
 def delete_file(file_path):
     """Delete the file from the file system."""
